@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Vibrant gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header, footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.start-container {
+    text-align: center;
+    background: radial-gradient(circle, #ffffff, #f0f0f0);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #3d9afe, #00d2fe);
+}
+
+#gameCanvas {
+    border: 2px solid #333;
+    background: linear-gradient(to bottom, #87ceeb, #4682b4); /* Game background gradient */
+}
+
+#score, #lives {
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#score { top: 10px; left: 10px; }
+#lives { top: 10px; right: 10px; }
+
+@media (max-width: 600px) {
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+    .start-container {
+        width: 90%;
+    }
+    button {
+        width: 80%;
+    }
+}
+
